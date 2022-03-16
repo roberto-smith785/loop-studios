@@ -29,7 +29,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="nav-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -37,7 +37,8 @@
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
         <span class="navbar-toggler-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/></g></svg>
+           <img class="menu-open img-fluid" src="images/icon-hamburger.svg">
+           <img class="menu-close img-fluid" src="images/icon-close.svg" style="display:none;">
         </span>
         </button>
                     <div class="collapse  navbar-collapse" id="navbarMenu">
@@ -63,7 +64,11 @@
             </nav>
         </div>
         <div class=" hero">
-            <div class="col">
+            <picture>
+                <source media="(max-width:500px)" class="hero-img img-fluid" srcset="images/mobile/image-hero.jpg">
+                <img class="hero-img img-fluid" src="images/desktop/image-hero.jpg">
+            </picture>
+            <div class="hero-text">
                 <h1 class="display-4">
                     IMMERSIVE EXPERIENCES THAT DELIVER
                 </h1>
@@ -96,29 +101,61 @@
         <div class="row content-container">
             <div class="row box-container-1">
                 <div class="col-lg-3 box box-1 col">
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-deep-earth.jpg">
+                        <img class=" img-fluid" src="images/desktop/image-deep-earth.jpg">
+                    </picture>
                     <h3 class="img-text">DEEP<br>EARTH</h3>
                 </div>
                 <div class="col-lg-3 box box-2 col">
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-night-arcade.jpg">
+                        <img class=" img-fluid" src="images/desktop/image-night-arcade.jpg">
+                    </picture>
                     <h3 class="img-text">NIGHT<br>ARCADE</h3>
                 </div>
                 <div class="col-lg-3 box box-3 col">
-                    <h3 class="img-text">SOOCER<br>TEAM VR</h3>
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-soccer-team.jpg">
+                        <img class=" img-fluid" src="images/desktop/image-soccer-team.jpg">
+                    </picture>
+                    <h3 class="img-text">SOCCER<br>TEAM VR</h3>
                 </div>
                 <div class="col-lg-3 box box-4 col">
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-grid.jpg">
+                        <img class="img-fluid" src="images/desktop/image-grid.jpg">
+                    </picture>
                     <h3 class="img-text">THE<br>GRID</h3>
                 </div>
             </div>
             <div class="row box-container-2">
                 <div class="col-lg-3 box box-5 col">
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-from-above.jpg">
+                        <img class="img-fluid" src="images/desktop/image-from-above.jpg">
+                    </picture>
                     <h3 class="img-text">FROM UP<br>ABOVE VR</h3>
                 </div>
                 <div class="col-lg-3 box box-6 col">
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-pocket-borealis.jpg">
+                        <img class=" img-fluid" src="images/desktop/image-pocket-borealis.jpg">
+                    </picture>
                     <h3 class="img-text">POCKET<br>BOREALIS</h3>
                 </div>
                 <div class="col-lg-3 box box-7 col">
+                    <picture>
+                        <source media="(max-width:769px)" class="img-fluid" srcset="images/mobile/image-curiosity.jpg">
+                        <img class="img-fluid" src="images/desktop/image-curiosity.jpg">
+                    </picture>
                     <h3 class="img-text">THE<br>CURIOSITY</h3>
                 </div>
                 <div class="col-lg-3 box box-8 col">
+                    <picture>
+                        <source media="(max-width:769px)" class=" img-fluid" srcset="images/mobile/image-fisheye.jpg">
+                        <img class=" img-fluid" src="images/desktop/image-fisheye.jpg">
+                    </picture>
                     <h3 class="img-text">MAKE IT<br>FISHEYE</h3>
                 </div>
             </div>
@@ -173,6 +210,7 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Roberto Smith</a>.
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="close.js"></script>
 </body>
 
 </html>
