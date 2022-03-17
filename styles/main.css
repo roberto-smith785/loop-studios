@@ -1,320 +1,330 @@
-                                     :root {
-                                        /*primary color*/
-                                        --White: hsl(0, 0%, 100%);
-                                        --Black: hsl(0, 0%, 0%);
-                                        --DarkGray: hsl(0, 0%, 55%);
-                                        --VeryDarkGray: hsl(0, 0%, 41%);
-                                        --FontSize: 18px;
-                                        --FontFamily1: [Alata](https: //fonts.google.com/specimen/Alata);
-                                        --FontFamily2: [Josefin Sans](https: //fonts.google.com/specimen/Josefin+Sans)
-                                        --FontWeightSmall: 300;
-                                        --FontWeightBig: 400;
-                                    }
-                                    
-                                    * {
-                                        padding: 0;
-                                        margin: 0;
-                                    }
-                                    
-                                    body {
-                                        font-family: var(--FontFamily1), var(--FontFamily2);
-                                        font-size: var(--FontSize);
-                                        position: relative;
-                                        overflow-x: hidden;
-                                    }
-                                    
-                                    .btn:focus, button:focus {
-                                        box-shadow: none !important;
-                                        outline: none !important;
-                                    }
-                                    
-                                    .btn, button {
-                                        box-shadow: none !important;
-                                        border: none;
-                                    }
-                                    
-                                    .row {
-                                        width: 100% !important;
-                                        margin: 0 !important;
-                                        justify-content: space-evenly!important;
-                                    }
-                                    
-                                    header {
-                                        position: relative;
-                                    }
-                                    
-                                    .nav-container {
-                                        position: absolute;
-                                        z-index: 100;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        padding: 1rem;
-                                        transition: all 0s;
-                                    }
-                                    
-                                    .navbar-toggler, .navbar-collapse {
-                                        transition: all 0s;
-                                    }
-                                    
-                                    .hero-text {
-                                        position: absolute;
-                                        top: 35%;
-                                        margin-left: 6.5rem;
-                                        width: 50%;
-                                        border: 2px solid var(--White);
-                                        padding: 2rem;
-                                    }
-                                    
-                                    .navbar-nav .nav-link {
-                                        color: var(--White);
-                                    }
-                                    
-                                    .hero-text h1 {
-                                        color: var(--White);
-                                    }
-                                    
-                                    .section-2 {
-                                        padding: 6rem 4rem;
-                                    }
-                                    
-                                    .section-2 .row>div, .section-3 .row>div {
-                                        padding: 0;
-                                    }
-                                    
-                                    .section-2 .text-container {
-                                        margin: 10rem 0rem 0rem -15rem;
-                                        background: var(--White);
-                                        padding: 3rem 4rem !important;
-                                    }
-                                    
-                                    .section-3 h3 {
-                                        font-size: calc(1.55rem + .6vw) !important;
-                                    }
-                                    
-                                    .display-6 {
-                                        font-size: calc(1.575rem + 1.5vw) !important;
-                                    }
-                                    
-                                    .display-5 {
-                                        font-size: calc(1.825rem + 2.1vw) !important;
-                                    }
-                                    
-                                    .section-3 .heading-row {
-                                        padding: 0 4.5rem;
-                                    }
-                                    
-                                    .section-3 picture {
-                                        display: grid;
-                                        place-content: center;
-                                        filter: brightness(0.7);
-                                    }
-                                    
-                                    .section-3 .content-container {
-                                        padding: 1rem 2.5rem;
-                                    }
-                                    
-                                    .section-3 .box-container-1, .section-3 .box-container-2 {
-                                        margin-bottom: 3rem !important;
-                                    }
-                                    
-                                    .section-3 .box {
-                                        position: relative;
-                                        padding: 1rem !important;
-                                    }
-                                    
-                                    .section-3 .box img {
-                                        filter: brightness(0.7);
-                                        transition: all 0.25s;
-                                    }
-                                    
-                                    .section-3 .box img:hover {
-                                        filter: brightness(0.5);
-                                    }
-                                    
-                                    .section-3 .img-text {
-                                        position: absolute;
-                                        z-index: 100;
-                                        bottom: 5%;
-                                        color: var(--White);
-                                        left: 25%;
-                                    }
-                                    
-                                    .heading-row .btn, .screen-sm-btn .btn {
-                                        padding: 0.5rem 2rem !important;
-                                        border: 2px solid var(--Black);
-                                    }
-                                    
-                                    .heading-row .btn:hover, .screen-sm-btn .btn:hover {
-                                        background: var(--Black) !important;
-                                        border-color: var(--Black) !important;
-                                        color: var(--White);
-                                    }
-                                    
-                                    .screen-sm-btn {
-                                        display: none;
-                                    }
-                                    
-                                    .footer {
-                                        background: var(--Black);
-                                        padding: 3rem;
-                                        display: flex;
-                                    }
-                                    
-                                    .footer .row {
-                                        flex-direction: column;
-                                        width: 100%;
-                                    }
-                                    
-                                    .logo-div {
-                                        padding-left: 3.5rem !important;
-                                    }
-                                    
-                                    .socials-div, .copy-div {
-                                        text-align: end;
-                                    }
-                                    
-                                    .footer ul {
-                                        display: flex !important;
-                                        flex-direction: row !important;
-                                    }
-                                    
-                                    .footer ul li {
-                                        list-style-type: none;
-                                    }
-                                    
-                                    .footer .nav-link {
-                                        color: var(--White);
-                                    }
-                                    
-                                    .footer .copy-div p {
-                                        color: gray;
-                                    }
-                                    
-                                    @media(max-width:1000px) {
-                                        .hero-img {
-                                            height: 500px;
-                                            object-fit: cover;
-                                        }
-                                        .section-2 {
-                                            padding: 4rem 2rem;
-                                        }
-                                        .section-2 .text-container {
-                                            margin: 5rem 0rem 0rem -15rem;
-                                            padding: 1rem 2rem !important;
-                                        }
-                                        .hero-text {
-                                            top: 30%;
-                                        }
-                                    }
-                                    
-                                    @media(max-width:991px) {
-                                        .hero-img {
-                                            height: 700px;
-                                            object-fit: cover;
-                                        }
-                                        .navbar-nav {
-                                            padding: 5rem 0;
-                                            background: var(--Black);
-                                            width: 100%
-                                        }
-                                        .nav-item {
-                                            padding: 0 !important;
-                                        }
-                                        .navbar-nav .nav-link {
-                                            font-size: calc(1.5rem + .6vw) !important;
-                                        }
-                                    }
-                                    
-                                    @media(max-width:918px) {
-                                        .section-3 .img-text {
-                                            left: 15%;
-                                        }
-                                    }
-                                    
-                                    @media(max-width:780px) {
-                                        .section-3 .img-text {
-                                            left: 10%;
-                                        }
-                                    }
-                                    
-                                    @media(max-width:769px) {
-                                        .hero-img {
-                                            height: 650px;
-                                            object-fit: cover;
-                                        }
-                                        .hero-text {
-                                            margin-left: 5rem;
-                                            width: 80%;
-                                        }
-                                        .section-2 .text-container {
-                                            margin: 0;
-                                            padding: 5rem 2rem !important;
-                                            text-align: center;
-                                        }
-                                        .screen-big-btn {
-                                            display: none;
-                                        }
-                                        .screen-sm-btn {
-                                            display: block;
-                                            margin-bottom: 1.5rem !important;
-                                            width: 100% !important;
-                                            display: grid;
-                                            place-content: center;
-                                        }
-                                        .section-3 .heading-row {
-                                            text-align: center;
-                                        }
-                                        .section-3 .box-container-1, .section-3 .box-container-2 {
-                                            flex-direction: column;
-                                            margin-bottom: 0 !important;
-                                        }
-                                        .footer {
-                                            flex-direction: column;
-                                            text-align: center;
-                                        }
-                                        .footer .row {
-                                            width: 100% !important;
-                                            margin: 0 !important;
-                                            display: grid;
-                                            place-content: center !important;
-                                        }
-                                        .socials-div, .copy-div {
-                                            text-align: center;
-                                        }
-                                    }
-                                    
-                                    @media(max-width:500px) {
-                                        .hero-img {
-                                            height: 100vh;
-                                            width: 100vw;
-                                            object-fit: cover;
-                                        }
-                                        .hero-text {
-                                            margin: 0;
-                                            top: 35%;
-                                            left: 50%;
-                                            transform: translateX(-50%);
-                                        }
-                                        .section-2 .text-container {
-                                            padding-bottom: 2.5rem !important;
-                                        }
-                                        .footer ul {
-                                            flex-direction: column !important;
-                                        }
-                                    }
-                                    
-                                    @media(max-width:375px) {
-                                        .section-2 .text-container {
-                                            padding: 3rem 0rem !important;
-                                        }
-                                        .section-3 .heading-row {
-                                            padding: 0;
-                                        }
-                                        .section-3 .content-container {
-                                            padding: 1rem 0rem;
-                                        }
-                                        .section-3 .img-text {
-                                            bottom: 15%;
-                                        }
-                                    }
+                                      :root {
+                                         /*primary color*/
+                                         --White: hsl(0, 0%, 100%);
+                                         --Black: hsl(0, 0%, 0%);
+                                         --DarkGray: hsl(0, 0%, 55%);
+                                         --VeryDarkGray: hsl(0, 0%, 41%);
+                                         --FontSize: 18px;
+                                         --FontFamily1: Alata;
+                                         --FontFamily2: 'Josefin Sans';
+                                         --FontWeightSmall: 300;
+                                         --FontWeightBig: 400;
+                                     }
+                                     
+                                     * {
+                                         padding: 0;
+                                         margin: 0;
+                                     }
+                                     
+                                     body {
+                                         font-family: var(--FontFamily1), var(--FontFamily2);
+                                         font-size: var(--FontSize);
+                                         position: relative;
+                                         overflow-x: hidden;
+                                     }
+                                     
+                                     .btn:focus,
+                                     button:focus {
+                                         box-shadow: none !important;
+                                         outline: none !important;
+                                     }
+                                     
+                                     .btn,
+                                     button {
+                                         box-shadow: none !important;
+                                         border: none;
+                                     }
+                                     
+                                     .row {
+                                         width: 100% !important;
+                                         margin: 0 !important;
+                                         justify-content: space-evenly!important;
+                                     }
+                                     
+                                     header {
+                                         position: relative;
+                                     }
+                                     
+                                     .nav-container {
+                                         position: absolute;
+                                         z-index: 100;
+                                         top: 0;
+                                         left: 0;
+                                         right: 0;
+                                         padding: 1rem;
+                                         transition: all 0s;
+                                     }
+                                     
+                                     .navbar-toggler,
+                                     .navbar-collapse {
+                                         transition: all 0s;
+                                     }
+                                     
+                                     .hero-text {
+                                         position: absolute;
+                                         top: 35%;
+                                         margin-left: 6.5rem;
+                                         width: 50%;
+                                         border: 2px solid var(--White);
+                                         padding: 2rem;
+                                     }
+                                     
+                                     .navbar-nav .nav-link {
+                                         color: var(--White);
+                                     }
+                                     
+                                     .hero-text h1 {
+                                         color: var(--White);
+                                     }
+                                     
+                                     .section-2 {
+                                         padding: 6rem 4rem;
+                                     }
+                                     
+                                     .section-2 .row>div,
+                                     .section-3 .row>div {
+                                         padding: 0;
+                                     }
+                                     
+                                     .section-2 .text-container {
+                                         margin: 10rem 0rem 0rem -15rem;
+                                         background: var(--White);
+                                         padding: 3rem 4rem !important;
+                                     }
+                                     
+                                     .section-3 h3 {
+                                         font-size: calc(1.55rem + .6vw) !important;
+                                     }
+                                     
+                                     .display-6 {
+                                         font-size: calc(1.575rem + 1.5vw) !important;
+                                     }
+                                     
+                                     .display-5 {
+                                         font-size: calc(1.825rem + 2.1vw) !important;
+                                     }
+                                     
+                                     .section-3 .heading-row {
+                                         padding: 0 4.5rem;
+                                     }
+                                     
+                                     .section-3 picture {
+                                         display: grid;
+                                         place-content: center;
+                                         filter: brightness(0.7);
+                                     }
+                                     
+                                     .section-3 .content-container {
+                                         padding: 1rem 2.5rem;
+                                     }
+                                     
+                                     .section-3 .box-container-1,
+                                     .section-3 .box-container-2 {
+                                         margin-bottom: 3rem !important;
+                                     }
+                                     
+                                     .section-3 .box {
+                                         position: relative;
+                                         padding: 1rem !important;
+                                     }
+                                     
+                                     .section-3 .box img {
+                                         filter: brightness(0.7);
+                                         transition: all 0.25s;
+                                     }
+                                     
+                                     .section-3 .box img:hover {
+                                         filter: brightness(0.5);
+                                     }
+                                     
+                                     .section-3 .img-text {
+                                         position: absolute;
+                                         z-index: 100;
+                                         bottom: 5%;
+                                         color: var(--White);
+                                         left: 25%;
+                                     }
+                                     
+                                     .heading-row .btn,
+                                     .screen-sm-btn .btn {
+                                         padding: 0.5rem 2rem !important;
+                                         border: 2px solid var(--Black);
+                                     }
+                                     
+                                     .heading-row .btn:hover,
+                                     .screen-sm-btn .btn:hover {
+                                         background: var(--Black) !important;
+                                         border-color: var(--Black) !important;
+                                         color: var(--White);
+                                     }
+                                     
+                                     .screen-sm-btn {
+                                         display: none;
+                                     }
+                                     
+                                     .footer {
+                                         background: var(--Black);
+                                         padding: 3rem;
+                                         display: flex;
+                                     }
+                                     
+                                     .footer .row {
+                                         flex-direction: column;
+                                         width: 100%;
+                                     }
+                                     
+                                     .logo-div {
+                                         padding-left: 3.5rem !important;
+                                     }
+                                     
+                                     .socials-div,
+                                     .copy-div {
+                                         text-align: end;
+                                     }
+                                     
+                                     .footer ul {
+                                         display: flex !important;
+                                         flex-direction: row !important;
+                                     }
+                                     
+                                     .footer ul li {
+                                         list-style-type: none;
+                                     }
+                                     
+                                     .footer .nav-link {
+                                         color: var(--White);
+                                     }
+                                     
+                                     .footer .copy-div p {
+                                         color: gray;
+                                     }
+                                     
+                                     @media(max-width:1000px) {
+                                         .hero-img {
+                                             height: 500px;
+                                             object-fit: cover;
+                                         }
+                                         .section-2 {
+                                             padding: 4rem 2rem;
+                                         }
+                                         .section-2 .text-container {
+                                             margin: 5rem 0rem 0rem -15rem;
+                                             padding: 1rem 2rem !important;
+                                         }
+                                         .hero-text {
+                                             top: 30%;
+                                         }
+                                     }
+                                     
+                                     @media(max-width:991px) {
+                                         .hero-img {
+                                             height: 700px;
+                                             object-fit: cover;
+                                         }
+                                         .navbar-nav {
+                                             padding: 5rem 0;
+                                             background: var(--Black);
+                                             width: 100%
+                                         }
+                                         .nav-item {
+                                             padding: 0 !important;
+                                         }
+                                         .navbar-nav .nav-link {
+                                             font-size: calc(1.5rem + .6vw) !important;
+                                         }
+                                     }
+                                     
+                                     @media(max-width:918px) {
+                                         .section-3 .img-text {
+                                             left: 15%;
+                                         }
+                                     }
+                                     
+                                     @media(max-width:780px) {
+                                         .section-3 .img-text {
+                                             left: 10%;
+                                         }
+                                     }
+                                     
+                                     @media(max-width:769px) {
+                                         .hero-img {
+                                             height: 650px;
+                                             object-fit: cover;
+                                         }
+                                         .hero-text {
+                                             margin-left: 5rem;
+                                             width: 80%;
+                                         }
+                                         .section-2 .text-container {
+                                             margin: 0;
+                                             padding: 5rem 2rem !important;
+                                             text-align: center;
+                                         }
+                                         .screen-big-btn {
+                                             display: none;
+                                         }
+                                         .screen-sm-btn {
+                                             display: block;
+                                             margin-bottom: 1.5rem !important;
+                                             width: 100% !important;
+                                             display: grid;
+                                             place-content: center;
+                                         }
+                                         .section-3 .heading-row {
+                                             text-align: center;
+                                         }
+                                         .section-3 .box-container-1,
+                                         .section-3 .box-container-2 {
+                                             flex-direction: column;
+                                             margin-bottom: 0 !important;
+                                         }
+                                         .footer {
+                                             flex-direction: column;
+                                             text-align: center;
+                                         }
+                                         .footer .row {
+                                             width: 100% !important;
+                                             margin: 0 !important;
+                                             display: grid;
+                                             place-content: center !important;
+                                         }
+                                         .socials-div,
+                                         .copy-div {
+                                             text-align: center;
+                                         }
+                                     }
+                                     
+                                     @media(max-width:500px) {
+                                         .hero-img {
+                                             height: 100vh;
+                                             width: 100vw;
+                                             object-fit: cover;
+                                         }
+                                         .hero-text {
+                                             margin: 0;
+                                             top: 35%;
+                                             left: 50%;
+                                             transform: translateX(-50%);
+                                         }
+                                         .section-2 .text-container {
+                                             padding-bottom: 2.5rem !important;
+                                         }
+                                         .footer ul {
+                                             flex-direction: column !important;
+                                         }
+                                     }
+                                     
+                                     @media(max-width:375px) {
+                                         .section-2 .text-container {
+                                             padding: 3rem 0rem !important;
+                                         }
+                                         .section-3 .heading-row {
+                                             padding: 0;
+                                         }
+                                         .section-3 .content-container {
+                                             padding: 1rem 0rem;
+                                         }
+                                         .section-3 .img-text {
+                                             bottom: 15%;
+                                         }
+                                     }
